@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore professional eSports teams, rosters, statistics, and team profiles from top competitive gaming organizations">
+    <meta name="keywords" content="esports teams, professional gaming teams, team rosters, team statistics">
+    <title>eSports Teams - Professional Gaming Organizations</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logos/site-logo.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="../assets/images/logos/site-logo.png" alt="eSports Hub Logo" class="logo">
+                    <span class="logo-text">eSports Hub</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tournaments.html" class="nav-link">Tournaments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="teams.html" class="nav-link active">Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="players.html" class="nav-link">Players</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shop.html" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>eSports Teams</h1>
+            <p>Discover the world's top professional eSports organizations and their talented rosters</p>
+        </div>
+    </section>
+
+    <!-- Team Filter -->
+    <section class="team-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-options">
+                    <select class="filter-select" id="game-filter">
+                        <option value="all">All Games</option>
+                        <option value="league-of-legends">League of Legends</option>
+                        <option value="dota2">Dota 2</option>
+                        <option value="csgo">Counter-Strike 2</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="overwatch">Overwatch 2</option>
+                    </select>
+                    
+                    <select class="filter-select" id="region-filter">
+                        <option value="all">All Regions</option>
+                        <option value="north-america">North America</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="south-america">South America</option>
+                    </select>
+                    
+                    <select class="filter-select" id="tier-filter">
+                        <option value="all">All Tiers</option>
+                        <option value="tier1">Tier 1</option>
+                        <option value="tier2">Tier 2</option>
+                        <option value="tier3">Tier 3</option>
+                    </select>
+                </div>
+                
+                <div class="search-box">
+                    <input type="search" placeholder="Search teams..." class="search-input">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Teams -->
+    <section class="top-teams">
+        <div class="container">
+            <h2 class="section-title">Top Teams</h2>
+            <div class="teams-grid" id="teams-grid">
+                <!-- Team Card 1 -->
+                <div class="team-card" data-game="league-of-legends" data-region="europe" data-tier="tier1">
+                    <div class="team-header">
+                        <div class="team-logo">
+                            <img src="../assets/images/logos/site-logo.png" alt="Team Thunder">
+                        </div>
+                        <div class="team-info">
+                            <h3>Team Thunder</h3>
+                            <div class="team-meta">
+                                <span class="team-region">Europe</span>
+                                <span class="team-tier">Tier 1</span>
+                            </div>
+                            <div class="team-stats">
+                                <span class="stat">Rank: #1</span>
+                                <span class="stat">Wins: 45</span>
+                                <span class="stat">Losses: 12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-roster">
+                        <h4>Current Roster</h4>
+                        <div class="roster-list">
+                            <div class="player-item">
+                                <span class="player-name">Alex "Lightning" Chen</span>
+                                <span class="player-role">Top Lane</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Sarah "Storm" Johnson</span>
+                                <span class="player-role">Jungle</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Mike "Thunder" Rodriguez</span>
+                                <span class="player-role">Mid Lane</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Emma "Volt" Thompson</span>
+                                <span class="player-role">ADC</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">James "Spark" Wilson</span>
+                                <span class="player-role">Support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-actions">
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                        <a href="#" class="btn btn-outline">Follow Team</a>
+                    </div>
+                </div>
+
+                <!-- Team Card 2 -->
+                <div class="team-card" data-game="dota2" data-region="asia" data-tier="tier1">
+                    <div class="team-header">
+                        <div class="team-logo">
+                            <img src="../assets/images/logos/site-logo.png" alt="Dragon Force">
+                        </div>
+                        <div class="team-info">
+                            <h3>Dragon Force</h3>
+                            <div class="team-meta">
+                                <span class="team-region">Asia</span>
+                                <span class="team-tier">Tier 1</span>
+                            </div>
+                            <div class="team-stats">
+                                <span class="stat">Rank: #2</span>
+                                <span class="stat">Wins: 42</span>
+                                <span class="stat">Losses: 15</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-roster">
+                        <h4>Current Roster</h4>
+                        <div class="roster-list">
+                            <div class="player-item">
+                                <span class="player-name">Chen "Dragon" Wei</span>
+                                <span class="player-role">Carry</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Liu "Flame" Ming</span>
+                                <span class="player-role">Mid</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Wang "Storm" Lei</span>
+                                <span class="player-role">Offlane</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Zhang "Ice" Hao</span>
+                                <span class="player-role">Support</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Li "Wind" Jun</span>
+                                <span class="player-role">Support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-actions">
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                        <a href="#" class="btn btn-outline">Follow Team</a>
+                    </div>
+                </div>
+
+                <!-- Team Card 3 -->
+                <div class="team-card" data-game="csgo" data-region="north-america" data-tier="tier1">
+                    <div class="team-header">
+                        <div class="team-logo">
+                            <img src="../assets/images/logos/site-logo.png" alt="Phoenix Rising">
+                        </div>
+                        <div class="team-info">
+                            <h3>Phoenix Rising</h3>
+                            <div class="team-meta">
+                                <span class="team-region">North America</span>
+                                <span class="team-tier">Tier 1</span>
+                            </div>
+                            <div class="team-stats">
+                                <span class="stat">Rank: #3</span>
+                                <span class="stat">Wins: 38</span>
+                                <span class="stat">Losses: 18</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-roster">
+                        <h4>Current Roster</h4>
+                        <div class="roster-list">
+                            <div class="player-item">
+                                <span class="player-name">David "Phoenix" Smith</span>
+                                <span class="player-role">AWPer</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Lisa "Fire" Brown</span>
+                                <span class="player-role">Rifler</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Tom "Ash" Davis</span>
+                                <span class="player-role">Rifler</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Kate "Ember" Wilson</span>
+                                <span class="player-role">Rifler</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Chris "Flame" Miller</span>
+                                <span class="player-role">IGL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-actions">
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                        <a href="#" class="btn btn-outline">Follow Team</a>
+                    </div>
+                </div>
+
+                <!-- Team Card 4 -->
+                <div class="team-card" data-game="valorant" data-region="europe" data-tier="tier1">
+                    <div class="team-header">
+                        <div class="team-logo">
+                            <img src="../assets/images/logos/site-logo.png" alt="Ice Breakers">
+                        </div>
+                        <div class="team-info">
+                            <h3>Ice Breakers</h3>
+                            <div class="team-meta">
+                                <span class="team-region">Europe</span>
+                                <span class="team-tier">Tier 1</span>
+                            </div>
+                            <div class="team-stats">
+                                <span class="stat">Rank: #4</span>
+                                <span class="stat">Wins: 36</span>
+                                <span class="stat">Losses: 20</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-roster">
+                        <h4>Current Roster</h4>
+                        <div class="roster-list">
+                            <div class="player-item">
+                                <span class="player-name">Anna "Frost" Andersson</span>
+                                <span class="player-role">Duelist</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Lars "Ice" Eriksson</span>
+                                <span class="player-role">Initiator</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Erik "Cold" Johansson</span>
+                                <span class="player-role">Controller</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Maria "Snow" Larsson</span>
+                                <span class="player-role">Sentinel</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Johan "Freeze" Nilsson</span>
+                                <span class="player-role">Flex</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-actions">
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                        <a href="#" class="btn btn-outline">Follow Team</a>
+                    </div>
+                </div>
+
+                <!-- Team Card 5 -->
+                <div class="team-card" data-game="overwatch" data-region="north-america" data-tier="tier1">
+                    <div class="team-header">
+                        <div class="team-logo">
+                            <img src="../assets/images/logos/site-logo.png" alt="Storm Gaming">
+                        </div>
+                        <div class="team-info">
+                            <h3>Storm Gaming</h3>
+                            <div class="team-meta">
+                                <span class="team-region">North America</span>
+                                <span class="team-tier">Tier 1</span>
+                            </div>
+                            <div class="team-stats">
+                                <span class="stat">Rank: #5</span>
+                                <span class="stat">Wins: 34</span>
+                                <span class="stat">Losses: 22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-roster">
+                        <h4>Current Roster</h4>
+                        <div class="roster-list">
+                            <div class="player-item">
+                                <span class="player-name">Jake "Storm" Anderson</span>
+                                <span class="player-role">Tank</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Rachel "Rain" Taylor</span>
+                                <span class="player-role">DPS</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Mark "Wind" Clark</span>
+                                <span class="player-role">DPS</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Samantha "Cloud" White</span>
+                                <span class="player-role">Support</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Kevin "Bolt" Green</span>
+                                <span class="player-role">Support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-actions">
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                        <a href="#" class="btn btn-outline">Follow Team</a>
+                    </div>
+                </div>
+
+                <!-- Team Card 6 -->
+                <div class="team-card" data-game="league-of-legends" data-region="asia" data-tier="tier2">
+                    <div class="team-header">
+                        <div class="team-logo">
+                            <img src="../assets/images/logos/site-logo.png" alt="Shadow Warriors">
+                        </div>
+                        <div class="team-info">
+                            <h3>Shadow Warriors</h3>
+                            <div class="team-meta">
+                                <span class="team-region">Asia</span>
+                                <span class="team-tier">Tier 2</span>
+                            </div>
+                            <div class="team-stats">
+                                <span class="stat">Rank: #12</span>
+                                <span class="stat">Wins: 28</span>
+                                <span class="stat">Losses: 24</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-roster">
+                        <h4>Current Roster</h4>
+                        <div class="roster-list">
+                            <div class="player-item">
+                                <span class="player-name">Hiroshi "Shadow" Tanaka</span>
+                                <span class="player-role">Top Lane</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Yuki "Ninja" Sato</span>
+                                <span class="player-role">Jungle</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Takeshi "Stealth" Yamamoto</span>
+                                <span class="player-role">Mid Lane</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Akiko "Ghost" Suzuki</span>
+                                <span class="player-role">ADC</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-name">Ryo "Phantom" Ito</span>
+                                <span class="player-role">Support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-actions">
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                        <a href="#" class="btn btn-outline">Follow Team</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn btn-outline" id="load-more-teams">Load More Teams</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Rankings -->
+    <section class="team-rankings">
+        <div class="container">
+            <h2 class="section-title">Team Rankings</h2>
+            <div class="rankings-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team</th>
+                            <th>Region</th>
+                            <th>Game</th>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Win Rate</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Team Thunder</td>
+                            <td>Europe</td>
+                            <td>League of Legends</td>
+                            <td>45</td>
+                            <td>12</td>
+                            <td>78.9%</td>
+                            <td>2,450</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dragon Force</td>
+                            <td>Asia</td>
+                            <td>Dota 2</td>
+                            <td>42</td>
+                            <td>15</td>
+                            <td>73.7%</td>
+                            <td>2,380</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Phoenix Rising</td>
+                            <td>North America</td>
+                            <td>Counter-Strike 2</td>
+                            <td>38</td>
+                            <td>18</td>
+                            <td>67.9%</td>
+                            <td>2,210</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Ice Breakers</td>
+                            <td>Europe</td>
+                            <td>Valorant</td>
+                            <td>36</td>
+                            <td>20</td>
+                            <td>64.3%</td>
+                            <td>2,150</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Storm Gaming</td>
+                            <td>North America</td>
+                            <td>Overwatch 2</td>
+                            <td>34</td>
+                            <td>22</td>
+                            <td>60.7%</td>
+                            <td>2,080</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>eSports Hub</h3>
+                    <p>Your premier destination for competitive gaming and eSports community.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="players.html">Players</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest eSports news and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/analytics.js"></script>
+    
+    <!-- Teams-specific JavaScript -->
+    <script>
+        // Team filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const gameFilter = document.getElementById('game-filter');
+            const regionFilter = document.getElementById('region-filter');
+            const tierFilter = document.getElementById('tier-filter');
+            const searchInput = document.querySelector('.search-input');
+            const teamCards = document.querySelectorAll('.team-card');
+            const loadMoreBtn = document.getElementById('load-more-teams');
+            
+            let visibleCards = 6;
+            
+            // Filter teams
+            function filterTeams() {
+                const selectedGame = gameFilter.value;
+                const selectedRegion = regionFilter.value;
+                const selectedTier = tierFilter.value;
+                const searchTerm = searchInput.value.toLowerCase();
+                
+                teamCards.forEach(card => {
+                    const gameMatch = selectedGame === 'all' || card.dataset.game === selectedGame;
+                    const regionMatch = selectedRegion === 'all' || card.dataset.region === selectedRegion;
+                    const tierMatch = selectedTier === 'all' || card.dataset.tier === selectedTier;
+                    const searchMatch = searchTerm === '' || 
+                        card.querySelector('h3').textContent.toLowerCase().includes(searchTerm);
+                    
+                    if (gameMatch && regionMatch && tierMatch && searchMatch) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+            
+            // Event listeners
+            gameFilter.addEventListener('change', filterTeams);
+            regionFilter.addEventListener('change', filterTeams);
+            tierFilter.addEventListener('change', filterTeams);
+            searchInput.addEventListener('input', filterTeams);
+            
+            // Load more teams
+            loadMoreBtn.addEventListener('click', function() {
+                const hiddenCards = Array.from(teamCards).filter(card => 
+                    card.style.display !== 'none' && !card.classList.contains('visible')
+                );
+                
+                // Show next 3 cards
+                for (let i = 0; i < Math.min(3, hiddenCards.length); i++) {
+                    hiddenCards[i].classList.add('visible');
+                }
+                
+                // Hide button if no more cards
+                if (hiddenCards.length <= 3) {
+                    this.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

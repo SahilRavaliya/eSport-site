@@ -1,0 +1,268 @@
+/* eSports Hub - Dark Mode Theme (Default) */
+
+/* This file contains additional dark mode specific styles */
+/* The main theme is already dark, but this provides enhanced dark mode features */
+
+/* Enhanced Dark Mode Variables */
+:root {
+    /* Additional dark mode colors */
+    --dark-bg-primary: #0a0a0a;      /* Even darker background */
+    --dark-bg-secondary: #1a1a1a;    /* Dark gray */
+    --dark-bg-tertiary: #2a2a2a;     /* Medium dark gray */
+    --dark-bg-card: #1f1f1f;         /* Card background */
+    
+    /* Enhanced text colors for dark mode */
+    --dark-text-primary: #ffffff;    /* Pure white */
+    --dark-text-secondary: #e0e0e0;  /* Light gray */
+    --dark-text-muted: #a0a0a0;      /* Medium gray */
+    
+    /* Enhanced border colors */
+    --dark-border-color: #404040;    /* Dark border */
+    --dark-border-light: #606060;    /* Light dark border */
+    
+    /* Enhanced glow effects */
+    --dark-glow-primary: 0 0 20px rgba(0, 191, 255, 0.4);
+    --dark-glow-secondary: 0 0 15px rgba(138, 43, 226, 0.3);
+    --dark-glow-accent: 0 0 15px rgba(255, 107, 53, 0.3);
+}
+
+/* Dark Mode Body */
+body.dark-mode {
+    background-color: var(--dark-bg-primary);
+    color: var(--dark-text-primary);
+}
+
+/* Enhanced Dark Mode Navigation */
+.dark-mode .main-header {
+    background: linear-gradient(135deg, var(--dark-bg-secondary) 0%, var(--dark-bg-primary) 100%);
+    border-bottom: 2px solid var(--primary-color);
+    box-shadow: var(--dark-glow-primary);
+}
+
+.dark-mode .nav-link:hover,
+.dark-mode .nav-link.active {
+    background-color: rgba(0, 191, 255, 0.15);
+    box-shadow: var(--dark-glow-primary);
+}
+
+/* Enhanced Dark Mode Hero */
+.dark-mode .hero-banner {
+    background: linear-gradient(135deg, var(--dark-bg-primary) 0%, var(--dark-bg-secondary) 100%);
+}
+
+.dark-mode .hero-text h1 {
+    text-shadow: var(--dark-glow-primary);
+}
+
+/* Enhanced Dark Mode Cards */
+.dark-mode .news-card,
+.dark-mode .tournament-card,
+.dark-mode .highlight-card {
+    background-color: var(--dark-bg-card);
+    border: 1px solid var(--dark-border-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .news-card:hover,
+.dark-mode .tournament-card:hover,
+.dark-mode .highlight-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), var(--dark-glow-primary);
+}
+
+/* Enhanced Dark Mode Buttons */
+.dark-mode .btn-primary {
+    box-shadow: var(--dark-glow-primary);
+}
+
+.dark-mode .btn-primary:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), var(--dark-glow-primary);
+}
+
+.dark-mode .btn-secondary:hover {
+    box-shadow: var(--dark-glow-primary);
+}
+
+/* Enhanced Dark Mode Forms */
+.dark-mode .form-input {
+    background-color: var(--dark-bg-secondary);
+    border-color: var(--dark-border-color);
+    color: var(--dark-text-primary);
+}
+
+.dark-mode .form-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: var(--dark-glow-primary);
+}
+
+.dark-mode .newsletter-form input {
+    background-color: var(--dark-bg-secondary);
+    border-color: var(--dark-border-color);
+    color: var(--dark-text-primary);
+}
+
+.dark-mode .newsletter-form input:focus {
+    border-color: var(--primary-color);
+    box-shadow: var(--dark-glow-primary);
+}
+
+/* Enhanced Dark Mode Footer */
+.dark-mode .main-footer {
+    background-color: var(--dark-bg-primary);
+    border-top: 2px solid var(--primary-color);
+}
+
+.dark-mode .social-link {
+    background-color: var(--dark-bg-secondary);
+}
+
+.dark-mode .social-link:hover {
+    background-color: var(--primary-color);
+    box-shadow: var(--dark-glow-primary);
+}
+
+/* Enhanced Dark Mode Scrollbar */
+.dark-mode ::-webkit-scrollbar {
+    width: 12px;
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+    background: var(--dark-bg-secondary);
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 6px;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
+}
+
+/* Enhanced Dark Mode Selection */
+.dark-mode ::selection {
+    background-color: var(--primary-color);
+    color: var(--dark-text-primary);
+}
+
+.dark-mode ::-moz-selection {
+    background-color: var(--primary-color);
+    color: var(--dark-text-primary);
+}
+
+/* Enhanced Dark Mode Focus */
+.dark-mode *:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Enhanced Dark Mode Loading */
+.dark-mode .loading {
+    border-color: var(--dark-border-color);
+    border-top-color: var(--primary-color);
+}
+
+/* Enhanced Dark Mode Scroll to Top */
+.dark-mode .scroll-to-top {
+    background-color: var(--primary-color);
+    box-shadow: var(--dark-glow-primary);
+}
+
+.dark-mode .scroll-to-top:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), var(--dark-glow-primary);
+}
+
+/* Dark Mode Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 50%;
+    right: var(--spacing-lg);
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--dark-text-primary);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: var(--dark-glow-primary);
+    transition: var(--transition-normal);
+    z-index: 1000;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), var(--dark-glow-primary);
+}
+
+/* Dark Mode Animations */
+@keyframes darkGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 191, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 191, 255, 0.6), 0 0 30px rgba(0, 191, 255, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 191, 255, 0.3);
+    }
+}
+
+.dark-mode .logo-text {
+    animation: darkGlow 3s ease-in-out infinite;
+}
+
+/* Dark Mode Special Effects */
+.dark-mode .tournament-card.featured {
+    border: 2px solid var(--primary-color);
+    box-shadow: var(--dark-glow-primary);
+    animation: darkGlow 2s ease-in-out infinite;
+}
+
+.dark-mode .news-category {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    box-shadow: var(--dark-glow-primary);
+}
+
+.dark-mode .tournament-badge {
+    background: linear-gradient(135deg, var(--success-color), var(--accent-color));
+    box-shadow: var(--dark-glow-accent);
+}
+
+/* Dark Mode Video Placeholder */
+.dark-mode .video-placeholder {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    box-shadow: var(--dark-glow-primary);
+}
+
+.dark-mode .video-placeholder:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), var(--dark-glow-primary);
+}
+
+/* Dark Mode Section Titles */
+.dark-mode .section-title::after {
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    box-shadow: var(--dark-glow-primary);
+}
+
+/* Dark Mode Responsive Adjustments */
+@media (max-width: 767px) {
+    .theme-toggle {
+        right: var(--spacing-md);
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .theme-toggle {
+        right: var(--spacing-sm);
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}

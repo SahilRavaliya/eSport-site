@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover upcoming and past eSports tournaments, championship events, and competitive gaming competitions">
+    <meta name="keywords" content="esports tournaments, gaming competitions, championship events, tournament schedules">
+    <title>eSports Tournaments - Upcoming & Past Events</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logos/site-logo.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="../assets/images/logos/site-logo.png" alt="eSports Hub Logo" class="logo">
+                    <span class="logo-text">eSports Hub</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tournaments.html" class="nav-link active">Tournaments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="teams.html" class="nav-link">Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="players.html" class="nav-link">Players</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shop.html" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>eSports Tournaments</h1>
+            <p>Discover the biggest competitive gaming events, from regional qualifiers to world championships</p>
+        </div>
+    </section>
+
+    <!-- Tournament Filter -->
+    <section class="tournament-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-status="upcoming">Upcoming</button>
+                    <button class="filter-tab" data-status="live">Live Now</button>
+                    <button class="filter-tab" data-status="completed">Completed</button>
+                </div>
+                
+                <div class="filter-options">
+                    <select class="filter-select" id="game-filter">
+                        <option value="all">All Games</option>
+                        <option value="league-of-legends">League of Legends</option>
+                        <option value="dota2">Dota 2</option>
+                        <option value="csgo">Counter-Strike 2</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="overwatch">Overwatch 2</option>
+                        <option value="fortnite">Fortnite</option>
+                    </select>
+                    
+                    <select class="filter-select" id="region-filter">
+                        <option value="all">All Regions</option>
+                        <option value="north-america">North America</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="south-america">South America</option>
+                        <option value="oceania">Oceania</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Tournaments -->
+    <section class="live-tournaments">
+        <div class="container">
+            <h2 class="section-title">Live Tournaments</h2>
+            <div class="live-tournaments-grid">
+                <div class="live-tournament-card">
+                    <div class="tournament-header">
+                        <div class="tournament-image">
+                            <img src="../assets/images/tournaments/tournament-poster.png" alt="Live Tournament">
+                            <div class="live-indicator">
+                                <span class="live-dot"></span>
+                                <span class="live-text">LIVE</span>
+                            </div>
+                        </div>
+                        <div class="tournament-info">
+                            <h3>World Championship 2024 - Finals</h3>
+                            <div class="tournament-meta">
+                                <span class="tournament-game">League of Legends</span>
+                                <span class="tournament-region">Global</span>
+                            </div>
+                            <div class="tournament-prize">$1,500,000</div>
+                        </div>
+                    </div>
+                    <div class="tournament-details">
+                        <div class="current-match">
+                            <h4>Current Match</h4>
+                            <div class="match-teams">
+                                <div class="team">
+                                    <span class="team-name">Team Thunder</span>
+                                    <span class="team-score">2</span>
+                                </div>
+                                <div class="vs">VS</div>
+                                <div class="team">
+                                    <span class="team-score">1</span>
+                                    <span class="team-name">Storm Gaming</span>
+                                </div>
+                            </div>
+                            <div class="match-status">Game 4 in Progress</div>
+                        </div>
+                        <div class="tournament-actions">
+                            <a href="#" class="btn btn-primary">Watch Live</a>
+                            <a href="#" class="btn btn-outline">Bracket</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="live-tournament-card">
+                    <div class="tournament-header">
+                        <div class="tournament-image">
+                            <img src="../assets/images/banners/home-banner.jpg" alt="Live Tournament">
+                            <div class="live-indicator">
+                                <span class="live-dot"></span>
+                                <span class="live-text">LIVE</span>
+                            </div>
+                        </div>
+                        <div class="tournament-info">
+                            <h3>Valorant Champions Tour</h3>
+                            <div class="tournament-meta">
+                                <span class="tournament-game">Valorant</span>
+                                <span class="tournament-region">North America</span>
+                            </div>
+                            <div class="tournament-prize">$500,000</div>
+                        </div>
+                    </div>
+                    <div class="tournament-details">
+                        <div class="current-match">
+                            <h4>Current Match</h4>
+                            <div class="match-teams">
+                                <div class="team">
+                                    <span class="team-name">Phoenix Rising</span>
+                                    <span class="team-score">13</span>
+                                </div>
+                                <div class="vs">VS</div>
+                                <div class="team">
+                                    <span class="team-score">11</span>
+                                    <span class="team-name">Ice Breakers</span>
+                                </div>
+                            </div>
+                            <div class="match-status">Map 3 - Ascent</div>
+                        </div>
+                        <div class="tournament-actions">
+                            <a href="#" class="btn btn-primary">Watch Live</a>
+                            <a href="#" class="btn btn-outline">Standings</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Tournaments -->
+    <section class="upcoming-tournaments">
+        <div class="container">
+            <h2 class="section-title">Upcoming Tournaments</h2>
+            <div class="tournaments-grid" id="tournaments-grid">
+                <!-- Tournament Card 1 -->
+                <div class="tournament-card" data-game="league-of-legends" data-region="global" data-status="upcoming">
+                    <div class="tournament-image">
+                        <img src="../assets/images/tournaments/tournament-poster.png" alt="World Championship">
+                        <div class="tournament-status upcoming">Upcoming</div>
+                    </div>
+                    <div class="tournament-content">
+                        <h3>World Championship 2025</h3>
+                        <div class="tournament-details">
+                            <span class="tournament-date">Jan 15-28, 2025</span>
+                            <span class="tournament-prize">$2,000,000</span>
+                        </div>
+                        <div class="tournament-meta">
+                            <span class="tournament-game">League of Legends</span>
+                            <span class="tournament-region">Global</span>
+                        </div>
+                        <p>The biggest League of Legends tournament of the year featuring the best teams from around the world competing for the ultimate prize.</p>
+                        <div class="tournament-actions">
+                            <a href="events/event1.html" class="btn btn-primary">View Details</a>
+                            <a href="#" class="btn btn-outline">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tournament Card 2 -->
+                <div class="tournament-card" data-game="dota2" data-region="europe" data-status="upcoming">
+                    <div class="tournament-image">
+                        <img src="../assets/images/banners/home-banner.jpg" alt="Dota 2 Major">
+                        <div class="tournament-status upcoming">Upcoming</div>
+                    </div>
+                    <div class="tournament-content">
+                        <h3>Dota 2 Major Championship</h3>
+                        <div class="tournament-details">
+                            <span class="tournament-date">Feb 10-20, 2025</span>
+                            <span class="tournament-prize">$1,200,000</span>
+                        </div>
+                        <div class="tournament-meta">
+                            <span class="tournament-game">Dota 2</span>
+                            <span class="tournament-region">Europe</span>
+                        </div>
+                        <p>Europe's premier Dota 2 tournament featuring top teams competing in Stockholm for the major championship title.</p>
+                        <div class="tournament-actions">
+                            <a href="events/event2.html" class="btn btn-primary">View Details</a>
+                            <a href="#" class="btn btn-outline">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tournament Card 3 -->
+                <div class="tournament-card" data-game="csgo" data-region="north-america" data-status="upcoming">
+                    <div class="tournament-image">
+                        <img src="../assets/images/players/player1.jpg" alt="CS2 Championship">
+                        <div class="tournament-status upcoming">Upcoming</div>
+                    </div>
+                    <div class="tournament-content">
+                        <h3>Counter-Strike 2 Championship</h3>
+                        <div class="tournament-details">
+                            <span class="tournament-date">Mar 5-12, 2025</span>
+                            <span class="tournament-prize">$800,000</span>
+                        </div>
+                        <div class="tournament-meta">
+                            <span class="tournament-game">Counter-Strike 2</span>
+                            <span class="tournament-region">North America</span>
+                        </div>
+                        <p>North America's premier Counter-Strike 2 tournament featuring the region's best teams competing for championship glory.</p>
+                        <div class="tournament-actions">
+                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="#" class="btn btn-outline">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tournament Card 4 -->
+                <div class="tournament-card" data-game="valorant" data-region="asia" data-status="upcoming">
+                    <div class="tournament-image">
+                        <img src="../assets/images/tournaments/tournament-poster.png" alt="Valorant Masters">
+                        <div class="tournament-status upcoming">Upcoming</div>
+                    </div>
+                    <div class="tournament-content">
+                        <h3>Valorant Masters Tokyo</h3>
+                        <div class="tournament-details">
+                            <span class="tournament-date">Apr 15-25, 2025</span>
+                            <span class="tournament-prize">$600,000</span>
+                        </div>
+                        <div class="tournament-meta">
+                            <span class="tournament-game">Valorant</span>
+                            <span class="tournament-region">Asia</span>
+                        </div>
+                        <p>Asia's premier Valorant tournament featuring top teams from across the region competing in Tokyo.</p>
+                        <div class="tournament-actions">
+                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="#" class="btn btn-outline">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tournament Card 5 -->
+                <div class="tournament-card" data-game="overwatch" data-region="global" data-status="upcoming">
+                    <div class="tournament-image">
+                        <img src="../assets/images/banners/home-banner.jpg" alt="Overwatch World Cup">
+                        <div class="tournament-status upcoming">Upcoming</div>
+                    </div>
+                    <div class="tournament-content">
+                        <h3>Overwatch 2 World Cup</h3>
+                        <div class="tournament-details">
+                            <span class="tournament-date">May 20-30, 2025</span>
+                            <span class="tournament-prize">$1,000,000</span>
+                        </div>
+                        <div class="tournament-meta">
+                            <span class="tournament-game">Overwatch 2</span>
+                            <span class="tournament-region">Global</span>
+                        </div>
+                        <p>The ultimate Overwatch 2 tournament featuring national teams from around the world competing for the World Cup title.</p>
+                        <div class="tournament-actions">
+                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="#" class="btn btn-outline">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tournament Card 6 -->
+                <div class="tournament-card" data-game="fortnite" data-region="global" data-status="upcoming">
+                    <div class="tournament-image">
+                        <img src="../assets/images/players/player1.jpg" alt="Fortnite World Cup">
+                        <div class="tournament-status upcoming">Upcoming</div>
+                    </div>
+                    <div class="tournament-content">
+                        <h3>Fortnite World Cup</h3>
+                        <div class="tournament-details">
+                            <span class="tournament-date">Jun 10-15, 2025</span>
+                            <span class="tournament-prize">$3,000,000</span>
+                        </div>
+                        <div class="tournament-meta">
+                            <span class="tournament-game">Fortnite</span>
+                            <span class="tournament-region">Global</span>
+                        </div>
+                        <p>The biggest Fortnite tournament of the year featuring solo and duo competitions with massive prize pools.</p>
+                        <div class="tournament-actions">
+                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="#" class="btn btn-outline">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn btn-outline" id="load-more-tournaments">Load More Tournaments</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournament Calendar -->
+    <section class="tournament-calendar">
+        <div class="container">
+            <h2 class="section-title">Tournament Calendar</h2>
+            <div class="calendar-widget">
+                <div class="calendar-header">
+                    <button class="calendar-nav" id="prev-month">‹</button>
+                    <h3 id="current-month">December 2024</h3>
+                    <button class="calendar-nav" id="next-month">›</button>
+                </div>
+                <div class="calendar-grid" id="calendar-grid">
+                    <!-- Calendar will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>eSports Hub</h3>
+                    <p>Your premier destination for competitive gaming and eSports community.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="players.html">Players</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest eSports news and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/analytics.js"></script>
+    
+    <!-- Tournament-specific JavaScript -->
+    <script>
+        // Tournament filtering and calendar functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterTabs = document.querySelectorAll('.filter-tab');
+            const tournamentCards = document.querySelectorAll('.tournament-card');
+            const gameFilter = document.getElementById('game-filter');
+            const regionFilter = document.getElementById('region-filter');
+            const loadMoreBtn = document.getElementById('load-more-tournaments');
+            
+            let visibleCards = 6;
+            
+            // Filter by status (upcoming, live, completed)
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const status = this.dataset.status;
+                    
+                    // Update active tab
+                    filterTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show/hide sections based on status
+                    document.querySelectorAll('.live-tournaments, .upcoming-tournaments').forEach(section => {
+                        section.style.display = 'none';
+                    });
+                    
+                    if (status === 'live') {
+                        document.querySelector('.live-tournaments').style.display = 'block';
+                    } else {
+                        document.querySelector('.upcoming-tournaments').style.display = 'block';
+                    }
+                });
+            });
+            
+            // Filter by game and region
+            function filterTournaments() {
+                const selectedGame = gameFilter.value;
+                const selectedRegion = regionFilter.value;
+                
+                tournamentCards.forEach(card => {
+                    const gameMatch = selectedGame === 'all' || card.dataset.game === selectedGame;
+                    const regionMatch = selectedRegion === 'all' || card.dataset.region === selectedRegion;
+                    
+                    if (gameMatch && regionMatch) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+            
+            gameFilter.addEventListener('change', filterTournaments);
+            regionFilter.addEventListener('change', filterTournaments);
+            
+            // Load more tournaments
+            loadMoreBtn.addEventListener('click', function() {
+                const hiddenCards = Array.from(tournamentCards).filter(card => 
+                    card.style.display !== 'none' && !card.classList.contains('visible')
+                );
+                
+                // Show next 3 cards
+                for (let i = 0; i < Math.min(3, hiddenCards.length); i++) {
+                    hiddenCards[i].classList.add('visible');
+                }
+                
+                // Hide button if no more cards
+                if (hiddenCards.length <= 3) {
+                    this.style.display = 'none';
+                }
+            });
+            
+            // Initialize calendar
+            initializeCalendar();
+        });
+        
+        // Calendar functionality
+        function initializeCalendar() {
+            const currentDate = new Date();
+            let currentMonth = currentDate.getMonth();
+            let currentYear = currentDate.getFullYear();
+            
+            const monthNames = [
+                'January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December'
+            ];
+            
+            const currentMonthElement = document.getElementById('current-month');
+            const calendarGrid = document.getElementById('calendar-grid');
+            const prevMonthBtn = document.getElementById('prev-month');
+            const nextMonthBtn = document.getElementById('next-month');
+            
+            function updateCalendar() {
+                currentMonthElement.textContent = `${monthNames[currentMonth]} ${currentYear}`;
+                
+                const firstDay = new Date(currentYear, currentMonth, 1);
+                const lastDay = new Date(currentYear, currentMonth + 1, 0);
+                const daysInMonth = lastDay.getDate();
+                const startingDayOfWeek = firstDay.getDay();
+                
+                calendarGrid.innerHTML = '';
+                
+                // Add day headers
+                const dayHeaders = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+                dayHeaders.forEach(day => {
+                    const dayHeader = document.createElement('div');
+                    dayHeader.className = 'calendar-day-header';
+                    dayHeader.textContent = day;
+                    calendarGrid.appendChild(dayHeader);
+                });
+                
+                // Add empty cells for days before the first day of the month
+                for (let i = 0; i < startingDayOfWeek; i++) {
+                    const emptyDay = document.createElement('div');
+                    emptyDay.className = 'calendar-day empty';
+                    calendarGrid.appendChild(emptyDay);
+                }
+                
+                // Add days of the month
+                for (let day = 1; day <= daysInMonth; day++) {
+                    const dayElement = document.createElement('div');
+                    dayElement.className = 'calendar-day';
+                    dayElement.textContent = day;
+                    
+                    // Add tournament indicators (sample data)
+                    const hasTournament = Math.random() > 0.8; // 20% chance of having a tournament
+                    if (hasTournament) {
+                        dayElement.classList.add('has-tournament');
+                        dayElement.title = 'Tournament on this day';
+                    }
+                    
+                    calendarGrid.appendChild(dayElement);
+                }
+            }
+            
+            prevMonthBtn.addEventListener('click', function() {
+                currentMonth--;
+                if (currentMonth < 0) {
+                    currentMonth = 11;
+                    currentYear--;
+                }
+                updateCalendar();
+            });
+            
+            nextMonthBtn.addEventListener('click', function() {
+                currentMonth++;
+                if (currentMonth > 11) {
+                    currentMonth = 0;
+                    currentYear++;
+                }
+                updateCalendar();
+            });
+            
+            updateCalendar();
+        }
+    </script>
+</body>
+</html>

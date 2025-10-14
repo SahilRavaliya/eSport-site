@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="User Management - eSports Hub Admin">
+    <title>User Management - eSports Hub Admin</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logos/site-logo.png">
+</head>
+<body>
+    <!-- Admin Header -->
+    <header class="admin-header">
+        <div class="container">
+            <div class="admin-header-content">
+                <div class="header-top">
+                    <h1>User Management</h1>
+                    <div class="admin-user">
+                        <span>Welcome, Admin User</span>
+                        <a href="#" class="btn btn-outline">Logout</a>
+                    </div>
+                </div>
+                <nav class="admin-nav">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="users.html" class="active">Users</a>
+                    <a href="events.html">Events</a>
+                    <a href="../index.html">View Site</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- User Management Content -->
+    <main class="admin-content">
+        <div class="container">
+            <!-- User Statistics -->
+            <section class="user-stats">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">1,247</div>
+                        <div class="stat-label">Total Users</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">892</div>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">45</div>
+                        <div class="stat-label">New This Week</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Admin Users</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- User Filters -->
+            <section class="user-filters">
+                <div class="filter-controls">
+                    <div class="search-box">
+                        <input type="search" placeholder="Search users..." class="search-input">
+                        <button class="search-btn">Search</button>
+                    </div>
+                    <div class="filter-options">
+                        <select class="filter-select">
+                            <option value="all">All Users</option>
+                            <option value="active">Active</option>
+                            <option value="inactive">Inactive</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                        <button class="btn btn-primary">Add User</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Users Table -->
+            <section class="users-table">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Last Login</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>john.doe@example.com</td>
+                                <td>User</td>
+                                <td><span class="status active">Active</span></td>
+                                <td>2 hours ago</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-secondary">Ban</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Sarah Johnson</td>
+                                <td>sarah.j@example.com</td>
+                                <td>User</td>
+                                <td><span class="status active">Active</span></td>
+                                <td>1 day ago</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-secondary">Ban</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Mike Rodriguez</td>
+                                <td>mike.r@example.com</td>
+                                <td>Admin</td>
+                                <td><span class="status active">Active</span></td>
+                                <td>30 minutes ago</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-secondary">Ban</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Emma Thompson</td>
+                                <td>emma.t@example.com</td>
+                                <td>User</td>
+                                <td><span class="status inactive">Inactive</span></td>
+                                <td>1 week ago</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-primary">Activate</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>eSports Hub Admin</h3>
+                    <p>Administrative dashboard for eSports Hub platform management.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="users.html">Users</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="../index.html">View Site</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Hub Admin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

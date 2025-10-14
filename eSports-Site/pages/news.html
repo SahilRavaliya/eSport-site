@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest eSports news, tournament updates, player announcements, and gaming industry insights">
+    <meta name="keywords" content="esports news, gaming news, tournament updates, player news, gaming industry">
+    <title>eSports News - Latest Updates</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logos/site-logo.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="../assets/images/logos/site-logo.png" alt="eSports Hub Logo" class="logo">
+                    <span class="logo-text">eSports Hub</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link active">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tournaments.html" class="nav-link">Tournaments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="teams.html" class="nav-link">Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="players.html" class="nav-link">Players</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shop.html" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>eSports News</h1>
+            <p>Stay updated with the latest news, updates, and insights from the world of competitive gaming</p>
+        </div>
+    </section>
+
+    <!-- News Filter -->
+    <section class="news-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-categories">
+                    <button class="filter-btn active" data-category="all">All News</button>
+                    <button class="filter-btn" data-category="tournaments">Tournaments</button>
+                    <button class="filter-btn" data-category="players">Players</button>
+                    <button class="filter-btn" data-category="teams">Teams</button>
+                    <button class="filter-btn" data-category="industry">Industry</button>
+                    <button class="filter-btn" data-category="technology">Technology</button>
+                </div>
+                
+                <div class="search-box">
+                    <input type="search" placeholder="Search news..." class="search-input">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured News -->
+    <section class="featured-news">
+        <div class="container">
+            <h2 class="section-title">Featured Story</h2>
+            <article class="featured-article">
+                <div class="featured-image">
+                    <img src="../assets/images/banners/home-banner.jpg" alt="Featured News">
+                    <div class="featured-badge">Featured</div>
+                </div>
+                <div class="featured-content">
+                    <span class="news-category">Industry</span>
+                    <h2>eSports Industry Reaches New Heights with $2 Billion Revenue in 2024</h2>
+                    <p class="featured-excerpt">The eSports industry continues its meteoric rise, with global revenue surpassing $2 billion for the first time. This milestone represents a 15% increase from the previous year, driven by increased sponsorship deals, media rights, and fan engagement across all major gaming titles.</p>
+                    <div class="article-meta">
+                        <span class="author">By Sarah Johnson</span>
+                        <span class="date">December 15, 2024</span>
+                        <span class="read-time">5 min read</span>
+                    </div>
+                    <a href="#" class="read-more-btn">Read Full Article</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="news-archive">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <div class="news-grid" id="news-grid">
+                <!-- Tournament News -->
+                <article class="news-card" data-category="tournaments">
+                    <div class="news-image">
+                        <img src="../assets/images/tournaments/tournament-poster.png" alt="Championship Finals">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Tournaments</span>
+                        <h3>World Championship Finals Set for This Weekend</h3>
+                        <p>The biggest eSports championship of the year is happening this weekend with a record-breaking prize pool of $1.5 million. Top teams from around the world will compete for the ultimate title.</p>
+                        <div class="news-meta">
+                            <span class="news-date">Dec 14, 2024</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Player News -->
+                <article class="news-card" data-category="players">
+                    <div class="news-image">
+                        <img src="../assets/images/players/player1.jpg" alt="Rising Star Player">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Players</span>
+                        <h3>18-Year-Old Prodigy Signs Record Contract</h3>
+                        <p>Alex "Lightning" Chen has signed the largest rookie contract in eSports history, joining Team Thunder for an unprecedented $2.5 million deal over three years.</p>
+                        <div class="news-meta">
+                            <span class="news-date">Dec 13, 2024</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Team News -->
+                <article class="news-card" data-category="teams">
+                    <div class="news-image">
+                        <img src="../assets/images/banners/home-banner.jpg" alt="Team Reorganization">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Teams</span>
+                        <h3>Major Roster Changes Shake Up Competitive Scene</h3>
+                        <p>Several top teams have announced significant roster changes as they prepare for the upcoming season, with veteran players retiring and new talent emerging.</p>
+                        <div class="news-meta">
+                            <span class="news-date">Dec 12, 2024</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Industry News -->
+                <article class="news-card" data-category="industry">
+                    <div class="news-image">
+                        <img src="../assets/images/tournaments/tournament-poster.png" alt="Industry Growth">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Industry</span>
+                        <h3>New Streaming Platform Launches eSports Division</h3>
+                        <p>StreamTech has announced the launch of their dedicated eSports streaming platform, promising exclusive content and enhanced viewing experiences for gaming fans.</p>
+                        <div class="news-meta">
+                            <span class="news-date">Dec 11, 2024</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Technology News -->
+                <article class="news-card" data-category="technology">
+                    <div class="news-image">
+                        <img src="../assets/images/players/player1.jpg" alt="Gaming Technology">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Technology</span>
+                        <h3>Revolutionary Gaming Hardware Unveiled at CES</h3>
+                        <p>Major gaming hardware manufacturers have revealed next-generation peripherals designed specifically for competitive gaming, featuring ultra-low latency and enhanced precision.</p>
+                        <div class="news-meta">
+                            <span class="news-date">Dec 10, 2024</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tournament News -->
+                <article class="news-card" data-category="tournaments">
+                    <div class="news-image">
+                        <img src="../assets/images/banners/home-banner.jpg" alt="Regional Qualifiers">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Tournaments</span>
+                        <h3>Regional Qualifiers Begin Next Month</h3>
+                        <p>Regional qualifiers for the 2025 championship season will kick off in January, with teams from North America, Europe, Asia, and South America competing for spots in the main event.</p>
+                        <div class="news-meta">
+                            <span class="news-date">Dec 9, 2024</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Player News -->
+                <article class="news-card" data-category="players">
+                    <div class="news-image">
+                        <img src="../assets/images/tournaments/tournament-poster.png" alt="Player Achievement">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Players</span>
+                        <h3>Veteran Player Announces Retirement</h3>
+                        <p>After 8 years of professional competition, legendary player "Storm" has announced his retirement, leaving behind an impressive legacy of championships and memorable moments.</p>
+                        <div class="news-meta">
+                            <span class="news-date">Dec 8, 2024</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Industry News -->
+                <article class="news-card" data-category="industry">
+                    <div class="news-image">
+                        <img src="../assets/images/players/player1.jpg" alt="Sponsorship Deal">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Industry</span>
+                        <h3>Major Brand Announces Multi-Million Dollar Sponsorship</h3>
+                        <p>Tech giant NexCorp has signed a $50 million sponsorship deal with the eSports league, marking one of the largest corporate investments in competitive gaming history.</p>
+                        <div class="news-meta">
+                            <span class="news-date">Dec 7, 2024</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Technology News -->
+                <article class="news-card" data-category="technology">
+                    <div class="news-image">
+                        <img src="../assets/images/banners/home-banner.jpg" alt="AI in Gaming">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Technology</span>
+                        <h3>AI Integration Revolutionizes Training Methods</h3>
+                        <p>Professional teams are adopting AI-powered training systems that analyze gameplay patterns and provide personalized coaching recommendations to improve player performance.</p>
+                        <div class="news-meta">
+                            <span class="news-date">Dec 6, 2024</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn btn-outline" id="load-more-btn">Load More News</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-signup">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest eSports news delivered directly to your inbox. Never miss a tournament update or breaking story.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>eSports Hub</h3>
+                    <p>Your premier destination for competitive gaming and eSports community.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="players.html">Players</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest eSports news and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/analytics.js"></script>
+    
+    <!-- News-specific JavaScript -->
+    <script>
+        // News filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const newsCards = document.querySelectorAll('.news-card');
+            const searchInput = document.querySelector('.search-input');
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            
+            let visibleCards = 6; // Initially show 6 cards
+            
+            // Filter by category
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.dataset.category;
+                    
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter cards
+                    newsCards.forEach(card => {
+                        if (category === 'all' || card.dataset.category === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Search functionality
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                newsCards.forEach(card => {
+                    const title = card.querySelector('h3').textContent.toLowerCase();
+                    const content = card.querySelector('p').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || content.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Load more functionality
+            loadMoreBtn.addEventListener('click', function() {
+                const hiddenCards = Array.from(newsCards).filter(card => 
+                    card.style.display !== 'none' && !card.classList.contains('visible')
+                );
+                
+                // Show next 3 cards
+                for (let i = 0; i < Math.min(3, hiddenCards.length); i++) {
+                    hiddenCards[i].classList.add('visible');
+                }
+                
+                // Hide button if no more cards
+                if (hiddenCards.length <= 3) {
+                    this.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

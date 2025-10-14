@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Event Management - eSports Hub Admin">
+    <title>Event Management - eSports Hub Admin</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logos/site-logo.png">
+</head>
+<body>
+    <!-- Admin Header -->
+    <header class="admin-header">
+        <div class="container">
+            <div class="admin-header-content">
+                <div class="header-top">
+                    <h1>Event Management</h1>
+                    <div class="admin-user">
+                        <span>Welcome, Admin User</span>
+                        <a href="#" class="btn btn-outline">Logout</a>
+                    </div>
+                </div>
+                <nav class="admin-nav">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="users.html">Users</a>
+                    <a href="events.html" class="active">Events</a>
+                    <a href="../index.html">View Site</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Event Management Content -->
+    <main class="admin-content">
+        <div class="container">
+            <!-- Event Statistics -->
+            <section class="event-stats">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">23</div>
+                        <div class="stat-label">Total Events</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Live Events</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Upcoming Events</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">156</div>
+                        <div class="stat-label">Total Registrations</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Event Actions -->
+            <section class="event-actions">
+                <div class="action-controls">
+                    <div class="filter-options">
+                        <select class="filter-select">
+                            <option value="all">All Events</option>
+                            <option value="live">Live</option>
+                            <option value="upcoming">Upcoming</option>
+                            <option value="completed">Completed</option>
+                        </select>
+                        <select class="filter-select">
+                            <option value="all">All Games</option>
+                            <option value="league-of-legends">League of Legends</option>
+                            <option value="dota2">Dota 2</option>
+                            <option value="csgo">Counter-Strike 2</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary">Create New Event</button>
+                </div>
+            </section>
+
+            <!-- Events Table -->
+            <section class="events-table">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Event Name</th>
+                                <th>Game</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Prize Pool</th>
+                                <th>Registrations</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>World Championship 2024</td>
+                                <td>League of Legends</td>
+                                <td>Dec 20-22, 2024</td>
+                                <td><span class="status live">Live</span></td>
+                                <td>$1,500,000</td>
+                                <td>16/16</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-primary">Manage</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Dota 2 Major Championship</td>
+                                <td>Dota 2</td>
+                                <td>Feb 10-20, 2025</td>
+                                <td><span class="status upcoming">Upcoming</span></td>
+                                <td>$1,200,000</td>
+                                <td>8/12</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-primary">Manage</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Counter-Strike 2 Championship</td>
+                                <td>Counter-Strike 2</td>
+                                <td>Mar 5-12, 2025</td>
+                                <td><span class="status upcoming">Upcoming</span></td>
+                                <td>$800,000</td>
+                                <td>5/8</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-primary">Manage</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Valorant Masters Tokyo</td>
+                                <td>Valorant</td>
+                                <td>Apr 15-25, 2025</td>
+                                <td><span class="status upcoming">Upcoming</span></td>
+                                <td>$600,000</td>
+                                <td>3/10</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-primary">Manage</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>eSports Hub Admin</h3>
+                    <p>Administrative dashboard for eSports Hub platform management.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="users.html">Users</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="../index.html">View Site</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Hub Admin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

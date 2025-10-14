@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and sensitive areas
+Disallow: /admin/
+Disallow: /scripts/
+Disallow: /data/
+Disallow: /uploads/
+
+# Allow important pages
+Allow: /index.html
+Allow: /pages/
+Allow: /assets/
+
+# Sitemap location (update when sitemap is created)
+# Sitemap: https://yoursite.com/sitemap.xml

@@ -1,0 +1,229 @@
+{
+  "tournaments": [
+    {
+      "id": 1,
+      "name": "World Championship 2024",
+      "game": "League of Legends",
+      "date": "2024-12-20",
+      "endDate": "2024-12-22",
+      "prize": 1500000,
+      "status": "upcoming",
+      "location": "Los Angeles, CA",
+      "venue": "Staples Center",
+      "format": "Double Elimination Bracket",
+      "teams": 16,
+      "description": "The biggest eSports championship of the year featuring the best League of Legends teams from around the world competing for the ultimate prize.",
+      "prizeDistribution": [
+        { "place": 1, "amount": 750000 },
+        { "place": 2, "amount": 300000 },
+        { "place": 3, "amount": 200000 },
+        { "place": 4, "amount": 150000 }
+      ],
+      "participatingTeams": [
+        "Team Thunder",
+        "Storm Gaming",
+        "Phoenix Rising",
+        "Ice Breakers"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dota 2 Major Championship",
+      "game": "Dota 2",
+      "date": "2025-02-10",
+      "endDate": "2025-02-20",
+      "prize": 1200000,
+      "status": "upcoming",
+      "location": "Stockholm, Sweden",
+      "venue": "Ericsson Globe",
+      "format": "Swiss System + Playoffs",
+      "teams": 12,
+      "description": "Europe's premier Dota 2 tournament featuring top teams competing in Stockholm for the major championship title.",
+      "prizeDistribution": [
+        { "place": 1, "amount": 600000 },
+        { "place": 2, "amount": 240000 },
+        { "place": 3, "amount": 160000 },
+        { "place": 4, "amount": 120000 }
+      ],
+      "participatingTeams": [
+        "Dragon Force",
+        "Shadow Warriors",
+        "Ice Breakers",
+        "Phoenix Rising"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Counter-Strike 2 Championship",
+      "game": "Counter-Strike 2",
+      "date": "2025-03-05",
+      "endDate": "2025-03-12",
+      "prize": 800000,
+      "status": "upcoming",
+      "location": "New York, NY",
+      "venue": "Madison Square Garden",
+      "format": "Group Stage + Playoffs",
+      "teams": 8,
+      "description": "North America's premier Counter-Strike 2 tournament featuring the region's best teams competing for championship glory.",
+      "prizeDistribution": [
+        { "place": 1, "amount": 400000 },
+        { "place": 2, "amount": 160000 },
+        { "place": 3, "amount": 100000 },
+        { "place": 4, "amount": 80000 }
+      ],
+      "participatingTeams": [
+        "Phoenix Rising",
+        "Storm Gaming",
+        "Team Thunder",
+        "Ice Breakers"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Valorant Masters Tokyo",
+      "game": "Valorant",
+      "date": "2025-04-15",
+      "endDate": "2025-04-25",
+      "prize": 600000,
+      "status": "upcoming",
+      "location": "Tokyo, Japan",
+      "venue": "Tokyo Dome",
+      "format": "Round Robin + Playoffs",
+      "teams": 10,
+      "description": "Asia's premier Valorant tournament featuring top teams from across the region competing in Tokyo.",
+      "prizeDistribution": [
+        { "place": 1, "amount": 300000 },
+        { "place": 2, "amount": 120000 },
+        { "place": 3, "amount": 80000 },
+        { "place": 4, "amount": 60000 }
+      ],
+      "participatingTeams": [
+        "Dragon Force",
+        "Shadow Warriors",
+        "Phoenix Rising",
+        "Storm Gaming"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Overwatch 2 World Cup",
+      "game": "Overwatch 2",
+      "date": "2025-05-20",
+      "endDate": "2025-05-30",
+      "prize": 1000000,
+      "status": "upcoming",
+      "location": "Berlin, Germany",
+      "venue": "Mercedes-Benz Arena",
+      "format": "Group Stage + Knockout",
+      "teams": 20,
+      "description": "The ultimate Overwatch 2 tournament featuring national teams from around the world competing for the World Cup title.",
+      "prizeDistribution": [
+        { "place": 1, "amount": 500000 },
+        { "place": 2, "amount": 200000 },
+        { "place": 3, "amount": 150000 },
+        { "place": 4, "amount": 100000 }
+      ],
+      "participatingTeams": [
+        "Team Thunder",
+        "Storm Gaming",
+        "Phoenix Rising",
+        "Ice Breakers"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Fortnite World Cup",
+      "game": "Fortnite",
+      "date": "2025-06-10",
+      "endDate": "2025-06-15",
+      "prize": 3000000,
+      "status": "upcoming",
+      "location": "Las Vegas, NV",
+      "venue": "T-Mobile Arena",
+      "format": "Solo & Duo Competitions",
+      "teams": 100,
+      "description": "The biggest Fortnite tournament of the year featuring solo and duo competitions with massive prize pools.",
+      "prizeDistribution": [
+        { "place": 1, "amount": 1500000 },
+        { "place": 2, "amount": 600000 },
+        { "place": 3, "amount": 400000 },
+        { "place": 4, "amount": 300000 }
+      ],
+      "participatingTeams": [
+        "Solo Competition - 50 players",
+        "Duo Competition - 25 teams"
+      ]
+    }
+  ],
+  "games": [
+    {
+      "id": "league-of-legends",
+      "name": "League of Legends",
+      "developer": "Riot Games",
+      "releaseYear": 2009,
+      "genre": "MOBA"
+    },
+    {
+      "id": "dota2",
+      "name": "Dota 2",
+      "developer": "Valve Corporation",
+      "releaseYear": 2013,
+      "genre": "MOBA"
+    },
+    {
+      "id": "csgo",
+      "name": "Counter-Strike 2",
+      "developer": "Valve Corporation",
+      "releaseYear": 2023,
+      "genre": "FPS"
+    },
+    {
+      "id": "valorant",
+      "name": "Valorant",
+      "developer": "Riot Games",
+      "releaseYear": 2020,
+      "genre": "FPS"
+    },
+    {
+      "id": "overwatch",
+      "name": "Overwatch 2",
+      "developer": "Blizzard Entertainment",
+      "releaseYear": 2022,
+      "genre": "Hero Shooter"
+    },
+    {
+      "id": "fortnite",
+      "name": "Fortnite",
+      "developer": "Epic Games",
+      "releaseYear": 2017,
+      "genre": "Battle Royale"
+    }
+  ],
+  "regions": [
+    {
+      "id": "north-america",
+      "name": "North America",
+      "countries": ["United States", "Canada", "Mexico"]
+    },
+    {
+      "id": "europe",
+      "name": "Europe",
+      "countries": ["United Kingdom", "Germany", "France", "Sweden", "Denmark"]
+    },
+    {
+      "id": "asia",
+      "name": "Asia",
+      "countries": ["China", "South Korea", "Japan", "Singapore"]
+    },
+    {
+      "id": "south-america",
+      "name": "South America",
+      "countries": ["Brazil", "Argentina", "Chile", "Peru"]
+    },
+    {
+      "id": "oceania",
+      "name": "Oceania",
+      "countries": ["Australia", "New Zealand"]
+    }
+  ]
+}

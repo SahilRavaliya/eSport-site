@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="eSports Hub Admin Dashboard - Manage your eSports platform">
+    <title>Admin Dashboard - eSports Hub</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logos/site-logo.png">
+    
+    <style>
+        /* Admin-specific styles */
+        .admin-header {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            border-bottom: 2px solid var(--accent-color);
+            padding: var(--spacing-lg) 0;
+        }
+        
+        .admin-nav {
+            display: flex;
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-md);
+        }
+        
+        .admin-nav a {
+            color: var(--text-secondary);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--radius-md);
+            transition: var(--transition-normal);
+        }
+        
+        .admin-nav a:hover,
+        .admin-nav a.active {
+            background-color: var(--accent-color);
+            color: var(--text-primary);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+        }
+        
+        .stat-card {
+            background-color: var(--bg-card);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .admin-section {
+            background-color: var(--bg-card);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .admin-section h2 {
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-lg);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: var(--spacing-sm);
+        }
+        
+        .recent-activity {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .activity-item {
+            display: flex;
+            align-items: center;
+            padding: var(--spacing-sm);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .activity-item:last-child {
+            border-bottom: none;
+        }
+        
+        .activity-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: var(--spacing-md);
+            color: var(--text-primary);
+        }
+        
+        .activity-content {
+            flex: 1;
+        }
+        
+        .activity-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .activity-time {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+        
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-md);
+        }
+        
+        .quick-action {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--text-primary);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            text-align: center;
+            text-decoration: none;
+            transition: var(--transition-normal);
+        }
+        
+        .quick-action:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .quick-action-icon {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .quick-action-title {
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .quick-action-desc {
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Admin Header -->
+    <header class="admin-header">
+        <div class="container">
+            <div class="admin-header-content">
+                <div class="header-top">
+                    <h1>Admin Dashboard</h1>
+                    <div class="admin-user">
+                        <span>Welcome, Admin User</span>
+                        <a href="#" class="btn btn-outline">Logout</a>
+                    </div>
+                </div>
+                <nav class="admin-nav">
+                    <a href="dashboard.html" class="active">Dashboard</a>
+                    <a href="users.html">Users</a>
+                    <a href="events.html">Events</a>
+                    <a href="../index.html">View Site</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard Content -->
+    <main class="dashboard-content">
+        <div class="container">
+            <!-- Statistics Overview -->
+            <section class="stats-overview">
+                <h2>Platform Overview</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">1,247</div>
+                        <div class="stat-label">Total Users</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">23</div>
+                        <div class="stat-label">Active Tournaments</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">156</div>
+                        <div class="stat-label">Registered Teams</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2.4K</div>
+                        <div class="stat-label">News Articles</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="quick-actions-section">
+                <h2>Quick Actions</h2>
+                <div class="quick-actions">
+                    <a href="events.html" class="quick-action">
+                        <div class="quick-action-icon">🏆</div>
+                        <div class="quick-action-title">Manage Events</div>
+                        <div class="quick-action-desc">Create and manage tournaments</div>
+                    </a>
+                    <a href="users.html" class="quick-action">
+                        <div class="quick-action-icon">👥</div>
+                        <div class="quick-action-title">User Management</div>
+                        <div class="quick-action-desc">View and manage users</div>
+                    </a>
+                    <a href="#" class="quick-action">
+                        <div class="quick-action-icon">📰</div>
+                        <div class="quick-action-title">Add News</div>
+                        <div class="quick-action-desc">Create news articles</div>
+                    </a>
+                    <a href="#" class="quick-action">
+                        <div class="quick-action-icon">⚙️</div>
+                        <div class="quick-action-title">Settings</div>
+                        <div class="quick-action-desc">Configure platform settings</div>
+                    </a>
+                </div>
+            </section>
+
+            <div class="dashboard-grid">
+                <!-- Recent Activity -->
+                <section class="admin-section">
+                    <h2>Recent Activity</h2>
+                    <div class="recent-activity">
+                        <div class="activity-item">
+                            <div class="activity-icon">👤</div>
+                            <div class="activity-content">
+                                <div class="activity-title">New user registration</div>
+                                <div class="activity-time">2 minutes ago</div>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">🏆</div>
+                            <div class="activity-content">
+                                <div class="activity-title">Tournament registration submitted</div>
+                                <div class="activity-time">15 minutes ago</div>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">📧</div>
+                            <div class="activity-content">
+                                <div class="activity-title">New contact message</div>
+                                <div class="activity-time">1 hour ago</div>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">📰</div>
+                            <div class="activity-content">
+                                <div class="activity-title">News article published</div>
+                                <div class="activity-time">3 hours ago</div>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">💬</div>
+                            <div class="activity-content">
+                                <div class="activity-title">Newsletter subscription</div>
+                                <div class="activity-time">5 hours ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- System Status -->
+                <section class="admin-section">
+                    <h2>System Status</h2>
+                    <div class="status-items">
+                        <div class="status-item">
+                            <span class="status-label">Website Status</span>
+                            <span class="status-value online">Online</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Database</span>
+                            <span class="status-value online">Connected</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">API Services</span>
+                            <span class="status-value online">Running</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Email Service</span>
+                            <span class="status-value warning">Limited</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Storage</span>
+                            <span class="status-value online">85% Used</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Recent Messages -->
+            <section class="admin-section">
+                <h2>Recent Messages</h2>
+                <div class="messages-list">
+                    <div class="message-item">
+                        <div class="message-header">
+                            <span class="message-sender">John Doe</span>
+                            <span class="message-subject">Tournament Inquiry</span>
+                            <span class="message-time">2 hours ago</span>
+                        </div>
+                        <div class="message-preview">
+                            Hello, I'm interested in registering my team for the upcoming tournament...
+                        </div>
+                    </div>
+                    <div class="message-item">
+                        <div class="message-header">
+                            <span class="message-sender">Sarah Johnson</span>
+                            <span class="message-subject">Partnership Proposal</span>
+                            <span class="message-time">5 hours ago</span>
+                        </div>
+                        <div class="message-preview">
+                            We would like to discuss potential partnership opportunities...
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>eSports Hub Admin</h3>
+                    <p>Administrative dashboard for eSports Hub platform management.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="users.html">Users</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="../index.html">View Site</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Admin Help</a></li>
+                        <li><a href="#">System Logs</a></li>
+                        <li><a href="#">Backup</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Hub Admin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/analytics.js"></script>
+    
+    <!-- Admin-specific JavaScript -->
+    <script>
+        // Admin dashboard functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update statistics (in a real app, this would fetch from API)
+            updateStats();
+            
+            // Refresh activity feed every 30 seconds
+            setInterval(refreshActivity, 30000);
+        });
+        
+        function updateStats() {
+            // Simulate real-time updates
+            const stats = document.querySelectorAll('.stat-number');
+            stats.forEach(stat => {
+                const currentValue = parseInt(stat.textContent.replace(/[^\d]/g, ''));
+                const newValue = currentValue + Math.floor(Math.random() * 5);
+                stat.textContent = newValue.toLocaleString();
+            });
+        }
+        
+        function refreshActivity() {
+            // In a real application, this would fetch new activity from the server
+            console.log('Refreshing activity feed...');
+        }
+    </script>
+</body>
+</html>
